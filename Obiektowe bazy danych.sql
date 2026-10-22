@@ -99,8 +99,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE(moje_ksiazki(i));
   END LOOP;
 
-  moje_ksiazki.TRIM(1);                -- usuniecie ostatniej
-  moje_ksiazki.EXTEND();               -- wstawienie nowej
+  moje_ksiazki.TRIM(1);        
+  moje_ksiazki.EXTEND();               
   moje_ksiazki(moje_ksiazki.LAST()) := 'W pustyni i w puszczy';
 
   DBMS_OUTPUT.PUT_LINE('Po zmianach:');
@@ -126,8 +126,8 @@ BEGIN
   miesiace(9) := 'WRZESIEN';  miesiace(10) := 'PAZDZIERNIK';
   miesiace(11) := 'LISTOPAD'; miesiace(12) := 'GRUDZIEN';
 
-  miesiace.DELETE(2,4);   -- usuwamy luty, marzec, kwiecien
-  miesiace.DELETE(11);    -- usuwamy listopad
+  miesiace.DELETE(2,4);   
+  miesiace.DELETE(11);   
 
   DBMS_OUTPUT.PUT_LINE('Liczba elementow: ' || miesiace.COUNT());
   FOR i IN miesiace.FIRST()..miesiace.LAST() LOOP
