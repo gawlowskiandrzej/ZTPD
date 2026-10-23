@@ -153,7 +153,6 @@ INSERT INTO zakupy VALUES (3, koszyk_produktow('JABLKA','GRUSZKI'));
 
 SELECT z.id, k.* FROM zakupy z, TABLE(z.koszyk) k;
 
--- usuniecie wszystkich zakupow zawierajacych CHLEB
 DELETE FROM zakupy
 WHERE id IN (SELECT z.id FROM zakupy z, TABLE(z.koszyk) k
              WHERE k.column_value = 'CHLEB');
