@@ -1,0 +1,1 @@
+collection("C:\Users\andrz\Downloads\BaseX130\basex\XQuery\db\shakespeare")/PLAY[.//LINE[contains(., "or not to be")]]/TITLE

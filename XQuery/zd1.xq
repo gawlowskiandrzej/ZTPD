@@ -1,0 +1,1 @@
+doc("C:\Users\andrz\Downloads\BaseX130\basex\XQuery\db\bib\bib.xml")//book/author/last

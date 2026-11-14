@@ -1,0 +1,1 @@
+<wynik>{ collection("C:\Users\andrz\Downloads\BaseX130\basex\XQuery\db\shakespeare")/PLAY/TITLE }</wynik>
